@@ -6,11 +6,12 @@
     <title>Nanda Lash</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
         <h1><span>N</span>anda <span>L</span>ash</h1>
-        <p>☰</p>
+        <p onclick="openMenu()">☰</p>
     </header>
     <main>
         <section id="home">
@@ -45,34 +46,34 @@
             </div>
             <div class="line"></div>
             <h2 class="text-over">CONHEÇA MEUS SERVIÇOS</h2>
-            <div class="gallery-services">
+            <div id="gallery-services">
                 <div class="card-img">
-                    <img src="assets/img/img-volume-brasileiro-card-service.png" alt="img-volume-brasileiro" class="img-service">
+                    <img src="assets/img/volume-brasileiro.png" alt="img-volume-brasileiro" class="img-service">
                     <h3 class="name-service">Volume Brasileiro</h3>
                     <p class="price">R$ 70,00</p>
                 </div>
                 <div class="card-img">
-                    <img src="assets/img/img-volume-egipcio-card-img.png" alt="img-volume-egipcio" class="img-service">
+                    <img src="assets/img/volume-egípcio.png" alt="img-volume-egipcio" class="img-service">
                     <h3 class="name-service">Volume Egípcio</h3>
                     <p class="price">R$ 70,00</p>
                 </div>
                 <div class="card-img">
-                    <img src="assets/img/img-volume-fox-card-img.png" alt="img-volume-fox" class="img-service">
+                    <img src="assets/img/volume-fox.png" alt="img-volume-fox" class="img-service">
                     <h3 class="name-service">Volume Fox</h3>
                     <p class="price">R$ 75,00</p>
                 </div>
                 <div class="card-img">
-                    <img src="assets/img/img-volume-wispy-card-img.png" alt="img-volume-wispy" class="img-service">
-                    <h3 class="name-service">Volume Wispy</h3>
+                    <img src="assets/img/volume-wispy.png" alt="img-volume-wispy" class="img-service">
+                    <h3 class="name-service">Volume Malibu</h3>
                     <p class="price">R$ 75,00</p>
                 </div>
                 <div class="card-img">
-                    <img src="assets/img/img-volume-arabe-card-img.png" alt="img-volume-arabe" class="img-service">
-                    <h3 class="name-service">Volume Árabe</h3>
+                    <img src="assets/img/volume-árabe.png" alt="img-volume-arabe" class="img-service">
+                    <h3 class="name-service">Volume Luxo</h3>
                     <p class="price">R$ 75,00</p>
                 </div>
                 <div class="card-img">
-                    <img src="assets/img/img-volume-glamour-card-img.png" alt="img-volume-glamour" class="img-service">
+                    <img src="assets/img/volume-glamour.png" alt="img-volume-glamour" class="img-service">
                     <h3 class="name-service">Volume Glamour</h3>
                     <p class="price">R$ 75,00</p>
                 </div>
@@ -109,6 +110,50 @@
                 <img src="assets/img-nanda.jpg" alt="img-nanda">
             </div>
         </section>
+        <section id="contact">
+            <div class="text">
+                <p class="top-text">VAMOS CONVERSAR?</p>
+                <h2 class="tittle">Tire suas <span>dúvidas</span></h2>
+                <p class="subtittle">Estou aqui para te atender, tirar suas dúvidas e agendar seu horário. <br>Sera um prazer cuidar do seu olhar!</p>
+            </div>
+            <a href=""> <i class="fa-brands fa-whatsapp"></i>Agendar pelo whatsapp</a>
+            <div class="btns-contact">
+                <a href="https://instagram.com/nanda.bylash/">
+                    <i class="fa-brands fa-instagram"></i>
+                    <div class="text-contact">
+                        <h3>Instagram</h3>
+                        <p class="description-contact">Acompanhe meu trabalho</p>
+                        <p class="destac-contact">@nanda.bylash</p>
+                    </div>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="text-contact">
+                        <h3>Localização</h3>
+                        <p class="description-contact">Rua Amadeu Bardela s85 Jardim Bela Vista</p>
+                    </div>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-clock"></i>
+                    <div class="text-contact">
+                        <h3>Horário</h3>
+                        <p class="description-contact">Coloque os horários aqui</p>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
+    <div id="menu">
+        <div class="menu-box">
+            <form>
+                <button id="close" onclick="closeMenu()" type="button">X</button>
+                <a href="#home">Início</a>
+                <a href="">Serviços</a>
+                <a href="#sobre">Sobre Mim</a>
+                <a href="admin.html">Agendar Seu Horário</a>
+                <a href="#contact">Contato</a>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
