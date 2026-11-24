@@ -14,7 +14,7 @@ function login(event){
     } else {
         let inputPsw = Number(inputPswValue)
         if (inputID === emailUser && inputPsw === pswUser){
-            window.location.href = '/NANDABYLASH/src/admin/admin.html'
+            window.location.href = './admin/admin.html'
         } else {
             error.style.display = 'flex'
             msgError.textContent = 'As credenciais não são válidas'
